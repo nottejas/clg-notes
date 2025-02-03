@@ -1,1 +1,81 @@
-,nottejas,nottejas-Aspire-A715-51G,02.02.2025 20:02,file:///home/nottejas/.config/libreoffice/4;
+1. Nature of Software:
+* Definition: Software is more than just code. It encompasses: 
+o Instructions (programs) that provide functionality.
+o Data structures that organize and manage information.
+o Documentation that describes the software's operation and use.
+* Characteristics: 
+o Developed, not manufactured: Software is engineered, not built like physical products. This makes it more flexible but also more prone to inconsistencies.
+o Doesn't wear out (but deteriorates): Software doesn't physically break down, but its value decreases as it becomes outdated, requires modification, and accumulates complexity. "Deterioration" refers to the increasing difficulty and cost of maintaining and updating software over time.
+o Custom-built (mostly): While reusable components are becoming more common, a large portion of software is still created specifically for a particular purpose.
+2. Changing Nature of Software:
+Software has evolved into diverse categories, presenting unique challenges:
+* System Software: Programs that manage the computer system (e.g., operating systems, compilers).
+* Application Software: Standalone programs for specific tasks (e.g., word processors, spreadsheets).
+* Artificial Intelligence (AI) Software: Uses non-numerical algorithms for complex problem-solving (e.g., robotics, pattern recognition).
+* Engineering and Scientific Software: Focuses on numerical computations and algorithms.
+* Embedded Software: Resides within products or systems to control specific functions (e.g., in cars, appliances).
+* Product-Line Software: Designed for a mass consumer market (e.g., games, office suites).
+* WebApps (Web Applications): Network-centric software accessed over the internet.
+3. Software Engineering:
+* Definitions: 
+o Applying sound engineering principles to create reliable and efficient software economically.
+o (IEEE definition) The application of a systematic, disciplined, and quantifiable approach to the development, operation, and maintenance of software.
+* Layered Technology: Software engineering is built upon layers: 
+o Quality Focus: The foundation, emphasizing correctness, integrity, usability, etc.
+o Process: The framework of activities, actions, and tasks.
+o Methods: The technical approaches for implementing the software.
+o Tools: Automated support for the development process.
+4. The Software Process:
+* Definition: A collection of activities, actions, and tasks to create a software product.
+* Generic Process Framework Activities: 
+o Communication: Gathering requirements and understanding stakeholder needs.
+o Planning: Creating a project plan that outlines tasks, risks, resources, and schedule.
+o Modeling: Developing models to understand requirements and design.
+o Construction: Coding and testing.
+o Deployment: Delivering the software and getting feedback.
+* Umbrella Activities: Supporting activities that run throughout the software process: 
+o Software Project Tracking and Control
+o Risk Management
+o Software Quality Assurance
+o Technical Reviews
+o Measurement
+o Software Configuration Management
+o Reusability Management
+o Work Product Preparation and Production 1   
+
+1. csinva.io 
+
+
+csinva.io
+
+5. Software Engineering Practices:
+* Essence of Practice: 
+1. Understand the problem.
+2. Plan a solution.
+3. Carry out the plan.
+4. Examine the result for accuracy.
+* Software Engineering Principles: 
+1. Value to Users: The primary goal is to provide value.
+2. KISS (Keep It Simple, Stupid!): Design should be as simple as possible.
+3. Maintain the Vision: A clear vision is crucial.
+4. What You Produce, Others Will Consume: Design with understanding in mind.
+5. Be Open to the Future: Systems should be adaptable.
+6. Plan Ahead for Reuse: Reuse saves time and effort.
+7. Think!: Thoughtful planning leads to better results.
+6. Software Myths:
+* Definition: Erroneous beliefs about software development that can lead to problems.
+* Categories: 
+o Management Myths: 
+* Myth: A book of standards provides everything needed.
+* Reality: Standards must be used, up-to-date, and adaptable.
+o Customer Myths: 
+* Myth: A general statement of objectives is enough.
+* Reality: Clear and continuous communication is essential for defining requirements.
+o Practitioner Myths: 
+* Myth: Once the program works, the job is done.
+* Reality: Maintenance and evolution consume significant effort.
+
+
+
+Link 
+https://www.youtube.com/watch?v=qxv6vPlx2Cs&list=PLmAmHQ-_5ySyCjVtHdSjJ64QU2x5TH8Dy
