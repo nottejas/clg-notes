@@ -1,16 +1,14 @@
 import React from 'react'
 
 function QuestionOne() {
-    const color = ["Red", "Green", "Blue"]
-    return (
-    <div>
-        <ul>
-            {color.map((color, index) => (
-                <li key={index}>{color}</li>
-            ))}
-        </ul>
-    </div>
-  )
-}
+    const colors = ["Red", "Green", "Blue"];
 
+    return (
+      <ul>
+        {colors.map((color, index) => (
+          <li key={index}>{color}</li>
+        ))}
+      </ul>
+    );
+  }
 export default QuestionOne
