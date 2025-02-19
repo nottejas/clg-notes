@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Student Details</h2>
+    <pre id="output">Feedback</pre>
+    <script>
+      let data = `{
+  "students": [
+    {
+      "name": "abc",
+      "age": 21
+    },
+    {
+      "name": "ASASA",
+      "age": 31
+    }
+  ]
+}`;
+
+        let students = JSON.parse(data)
+        document.getElementById("output").textContent=JSON.stringify(students, null, 2)
+    </script>
+  </body>
+</html>

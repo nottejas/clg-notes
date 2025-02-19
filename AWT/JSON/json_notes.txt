@@ -1,0 +1,17 @@
+json storing format
+int
+string {"name": "tejas"}
+array const cars = '["bmw", "ford", "adad"]'
+object  {"stud data": { "name": "Adadad", "age": 23 }}
+boolean "graduated": true
+null "salary": null
+
+
+obj to json
+
+let jsonData = '{"name": "ABC", "age": 90}';  // JSON as a string
+let obj = JSON.parse(jsonData);  // Now it's converted to a JavaScript object
+console.log(obj.name); // Output: ABC
+console.log(obj.age);  // Output: 90
+
+json to obj
