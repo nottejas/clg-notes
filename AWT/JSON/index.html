@@ -23,7 +23,14 @@
 }`;
 
         let students = JSON.parse(data)
-        document.getElementById("output").textContent=JSON.stringify(students, null, 2)
+
+        function replacer(key, value) {
+            if(key === "name" || key === "password"){
+                return undefined;
+            }
+            return value
+        }
+        document.getElementById("output").textContent=JSON.stringify(students, replacer, 2)
     </script>
   </body>
 </html>
