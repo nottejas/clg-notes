@@ -15,3 +15,4 @@ console.log(obj.name); // Output: ABC
 console.log(obj.age);  // Output: 90
 
 json to obj
+
