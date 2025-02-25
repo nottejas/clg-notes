@@ -1,0 +1,6 @@
+{
+    "users": [
+        {"name": "Tejas", "age": 21, "city": "Mumbai"},
+        {"name": "Vaibhavi", "age": 21, "city": "Pune"}
+    ]
+}
