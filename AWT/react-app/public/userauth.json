@@ -1,8 +1,6 @@
 {
     "users": [
-        {
-            
-        }
+        {"email": "tejas@gmail.com", "password": "tejas123"},
+        {"email": "vaibhavi@gmail.com", "password": "vaibhavi123"}
     ]
-  }
-  
+}

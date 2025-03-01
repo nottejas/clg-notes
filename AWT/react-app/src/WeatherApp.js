@@ -9,7 +9,7 @@ const WeatherApp = () => {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const response = await fetch("/weather.json"); // Fetch local JSON file
+        const response = await fetch("/weather.json");
         if (!response.ok) throw new Error("Failed to load weather data.");
         const data = await response.json();
         setWeatherData(data.cities);
@@ -33,17 +33,12 @@ const WeatherApp = () => {
   };
 
   return (
-    <div className="max-w-md mx-auto p-6 bg-blue-100 rounded-lg shadow-md text-center">
-      <h2 className="text-2xl font-bold mb-4">Weather Information</h2>
+    <div>
+      <h2>Weather Information</h2>
 
-      {error && <p className="text-red-500">{error}</p>}
+      {error && <p>{error}</p>}
 
-      
-      <select
-        className="mb-4 p-2 border rounded"
-        value={selectedCity}
-        onChange={handleCityChange}
-      >
+      <select value={selectedCity} onChange={handleCityChange}>
         {weatherData.map((city) => (
           <option key={city.name} value={city.name}>
             {city.name}
@@ -51,12 +46,11 @@ const WeatherApp = () => {
         ))}
       </select>
 
-     
       {weather ? (
         <div>
-          <p className="text-lg font-semibold">City: {weather.name}</p>
-          <p className="text-lg font-semibold">Temperature: {weather.temperature}°C</p>
-          <p className="text-lg">Condition: {weather.condition}</p>
+          <p>City: {weather.name}</p>
+          <p>Temperature: {weather.temperature}°C</p>
+          <p>Condition: {weather.condition}</p>
         </div>
       ) : (
         <p>Loading weather data...</p>

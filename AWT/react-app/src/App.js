@@ -1,11 +1,11 @@
 import React from "react";
-import FetchingData from "./FetchingData"
+import UserStorage from "./UserStorage";
 
 
 function App() {
   return (
     <div className="App">
-      <FetchingData />
+      <UserStorage />
     </div>
   );
 }
