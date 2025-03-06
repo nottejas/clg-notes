@@ -1,0 +1,8 @@
+[
+    { "id": 1, "name": "Rahul Sharma", "age": 28, "email": "rahul@codesphere.com" },
+    { "id": 2, "name": "Priya Nair", "age": 25, "email": "priya@codesphere.com" },
+    { "id": 3, "name": "Suresh Patil", "age": 32, "email": "suresh@codesphere.com" },
+    { "id": 4, "name": "Anita Deshmukh", "age": 30, "email": "anita@codesphere.com" },
+    { "id": 5, "name": "Vikram Thakur", "age": 27, "email": "vikram@codesphere.com" }
+  ]
+  
