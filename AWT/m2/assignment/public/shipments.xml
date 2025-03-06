@@ -1,0 +1,57 @@
+<shipments>
+  <shipment>
+    <trackingId>CC-12345</trackingId>
+    <senderName>Global Electronics Inc.</senderName>
+    <receiverName>Tejas Padmakar</receiverName>
+    <status>In Transit</status>
+    <estimatedDeliveryDate>2025-03-12</estimatedDeliveryDate>
+    <origin>New York, NY</origin>
+    <destination>Chicago, IL</destination>
+    <weight>24.5</weight>
+    <deliveryType>Express</deliveryType>
+  </shipment>
+  <shipment>
+    <trackingId>CC-23456</trackingId>
+    <senderName>Fresh Farms Produce</senderName>
+    <receiverName>Cristiano Ronaldo</receiverName>
+    <status>Delivered</status>
+    <estimatedDeliveryDate>2025-03-05</estimatedDeliveryDate>
+    <origin>Miami, FL</origin>
+    <destination>Atlanta, GA</destination>
+    <weight>105.8</weight>
+    <deliveryType>Standard</deliveryType>
+  </shipment>
+  <shipment>
+    <trackingId>CC-34567</trackingId>
+    <senderName>Textile Wholesalers</senderName>
+    <receiverName>Virat Kholi</receiverName>
+    <status>Processing</status>
+    <estimatedDeliveryDate>2025-03-15</estimatedDeliveryDate>
+    <origin>Los Angeles, CA</origin>
+    <destination>Portland, OR</destination>
+    <weight>18.2</weight>
+    <deliveryType>Standard</deliveryType>
+  </shipment>
+  <shipment>
+    <trackingId>CC-45678</trackingId>
+    <senderName>Medical Supplies Co.</senderName>
+    <receiverName>Speeedddddd</receiverName>
+    <status>Out for Delivery</status>
+    <estimatedDeliveryDate>2025-03-07</estimatedDeliveryDate>
+    <origin>Boston, MA</origin>
+    <destination>Providence, RI</destination>
+    <weight>42.6</weight>
+    <deliveryType>Priority</deliveryType>
+  </shipment>
+  <shipment>
+    <trackingId>CC-56789</trackingId>
+    <senderName>Furniture Makers Ltd.</senderName>
+    <receiverName>Home Decor Center</receiverName>
+    <status>Delayed</status>
+    <estimatedDeliveryDate>2025-03-18</estimatedDeliveryDate>
+    <origin>Denver, CO</origin>
+    <destination>Phoenix, AZ</destination>
+    <weight>215.0</weight>
+    <deliveryType>Standard</deliveryType>
+  </shipment>
+</shipments>
