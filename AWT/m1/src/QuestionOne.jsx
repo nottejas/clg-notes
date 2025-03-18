@@ -1,7 +1,7 @@
 import React from 'react'
 
 function QuestionOne() {
-    const colors = ["Red", "Green", "Blue", "Purple"];
+    const colors = ["Red", "Green", "Blue", "Purple", "White"];
 
     return (
       <ul>

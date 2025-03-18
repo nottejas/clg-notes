@@ -1,0 +1,8 @@
+{
+    "cities": [
+      { "name": "Mumbai", "temperature": 30, "condition": "Sunny" },
+      { "name": "Delhi", "temperature": 25, "condition": "Cloudy" },
+      { "name": "Bangalore", "temperature": 22, "condition": "Rainy" }
+    ]
+  }
+  

@@ -10,7 +10,7 @@ import QuestionTwo from './QuestionTwo';
 function App() {
   return (
     <div className="App">
-      {/* <QuestionOne /> */}
+      <QuestionOne />
       <QuestionTwo />
       <QuestionThree />
       <LoggedIn />

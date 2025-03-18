@@ -1,0 +1,194 @@
+/* File: src/components/ShipmentDetails.css */
+.shipment-details {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .details-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+  }
+  
+  .details-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .details-header h3 {
+    font-size: 24px;
+    margin: 0 0 10px 0;
+  }
+  
+  .estimated-delivery {
+    text-align: right;
+  }
+  
+  .estimated-delivery p {
+    margin: 0;
+  }
+  
+  .delivery-date {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .status-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  
+  .status-badge.processing {
+    background-color: #FFE082;
+    color: #755800;
+  }
+  
+  .status-badge.in-transit {
+    background-color: #90CAF9;
+    color: #0D47A1;
+  }
+  
+  .status-badge.out-for-delivery {
+    background-color: #80DEEA;
+    color: #006064;
+  }
+  
+  .status-badge.delivered {
+    background-color: #A5D6A7;
+    color: #1B5E20;
+  }
+  
+  .status-badge.delayed {
+    background-color: #EF9A9A;
+    color: #B71C1C;
+  }
+  
+  .details-content {
+    margin-bottom: 24px;
+  }
+  
+  .details-row {
+    display: flex;
+    margin-bottom: 24px;
+  }
+  
+  .details-column {
+    flex: 1;
+  }
+  
+  .details-column h4 {
+    margin: 0 0 8px 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .details-column p {
+    margin: 0 0 16px 0;
+    font-size: 16px;
+  }
+  
+  .shipment-info {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+  }
+  
+  .info-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .info-label {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  
+  .info-value {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .tracking-timeline h4 {
+    margin: 0 0 16px 0;
+  }
+  
+  .timeline {
+    position: relative;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    width: 2px;
+    background-color: #e0e0e0;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: 8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    border: 2px solid #fff;
+    box-shadow: 0 0 0 2px #e0e0e0;
+  }
+  
+  .timeline-item.completed .timeline-marker {
+    background-color: #4CAF50;
+    box-shadow: 0 0 0 2px #A5D6A7;
+  }
+  
+  .timeline-content h5 {
+    margin: 0 0 4px 0;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .details-footer {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .back-button {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #f0f0f0;
+    color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .back-button:hover {
+    background-color: #e0e0e0;
+  }
