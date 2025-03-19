@@ -1,0 +1,9 @@
+<shipments>
+    <shipment>
+        <trackingId>101</trackingId>
+        <sendersName>Tejas</sendersName> 
+        <receiverName>Ronaldo</receiverName>
+        <status>Active</status>   
+        <estimatedDeliveryDate>18th Feb</estimatedDeliveryDate>
+    </shipment>
+</shipments>
