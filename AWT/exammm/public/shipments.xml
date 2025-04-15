@@ -1,9 +1,36 @@
+
 <shipments>
     <shipment>
-        <trackingId>101</trackingId>
-        <sendersName>Tejas</sendersName> 
-        <receiverName>Ronaldo</receiverName>
-        <status>Active</status>   
-        <estimatedDeliveryDate>18th Feb</estimatedDeliveryDate>
-    </shipment>
+    <trackingId>CC-12345</trackingId>
+    <senderName>Acme Industries</senderName>
+    <receiverName>Global Tech Inc.</receiverName>
+    <status>In Transit</status>
+    <estimatedDeliveryDate>2025-03-25</estimatedDeliveryDate>
+    <origin>New York, NY</origin>
+    <destination>San Francisco, CA</destination>
+    <weight>25.5</weight>
+    <description>Electronics components</description>
+  </shipment>
+  <shipment>
+    <trackingId>CC-23456</trackingId>
+    <senderName>EcoGoods Manufacturing</senderName>
+    <receiverName>RetailPlus</receiverName>
+    <status>Delivered</status>
+    <estimatedDeliveryDate>2025-03-18</estimatedDeliveryDate>
+    <origin>Chicago, IL</origin>
+    <destination>Atlanta, GA</destination>
+    <weight>42.1</weight>
+    <description>Sustainable packaging materials</description>
+  </shipment>
+  <shipment>
+    <trackingId>CC-34567</trackingId>
+    <senderName>MediSupply Corp</senderName>
+    <receiverName>Central Hospital</receiverName>
+    <status>Processing</status>
+    <estimatedDeliveryDate>2025-03-22</estimatedDeliveryDate>
+    <origin>Boston, MA</origin>
+    <destination>Miami, FL</destination>
+    <weight>15.3</weight>
+    <description>Medical supplies</description>
+  </shipment>
 </shipments>

@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "name": "tejas",
+        "age": 32,
+        "email": "asas@gmail.com",
+        "position": "dev",
+        "department": "engi",
+        "joindate": "22-22-22"
+
+    },
+    {   
+        "id": 1,
+        "name": "zz",
+        "age": 3,
+        "email": "asas@gmail.com",
+        "position": "dev",
+        "department": "engi",
+        "joindate": "22-22-22"
+
+    }
+]
