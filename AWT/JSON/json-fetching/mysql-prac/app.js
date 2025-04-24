@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql');
+const mysql = require('mysql2');
 const app = express();
 const port = 3000;
 
@@ -10,8 +10,11 @@ app.use(express.json());
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '', // your password
-  database: '' // e.g., attendance_db
+  password: 'root', // your password
+  database: 'attendance_db', // e.g., attendance_db
+  authPlugins: {
+    mysql_clear_password: () => () => Buffer.from('root')
+  }
 });
 
 db.connect(err => {
