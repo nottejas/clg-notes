@@ -1,0 +1,6 @@
+[
+    { "id": 1, "event_name": "Music Concert", "date": "2025-05-21", "venue": "Pune" },
+    { "id": 2, "event_name": "Tech Meetup", "date": "2025-06-10", "venue": "Mumbai" },
+    { "id": 3, "event_name": "Art Expo", "date": "2025-07-01", "venue": "Delhi" }
+  ]
+  

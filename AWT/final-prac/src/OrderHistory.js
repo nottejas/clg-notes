@@ -1,39 +1,41 @@
-import React from 'react'
+import React from "react";
 
-function OrderHistory(props) {
+function OrderHistory(){
+    const orders = [
+        { order_id: 101, amt: 3000, status: "pending"},
+        { order_id: 102, amt: 1500, status: "completed" },
+        { order_id: 103, amt: 2500, status: "pending" },
+    ]
 
-    const { orders } = props
+    const filteredOrders = orders.filter(order => order.status === "pending" && order.amt > 2000)
 
-  return (
-    <div>
-        <h2>Order hist</h2> 
-        <table border='1' cellPadding="8" >
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>name</th>
-                    <th>Irevenue</th>
-                </tr>
-            </thead>
-            <tbody>
-                {orders.length > 0 ? (
-                    orders.map((order) => (
-                        <tr key={order.id}>
-                            <td>{order.id}</td>
-                            <td>{order.name}</td>
-                            <td>{order.total}</td>
-                        </tr>
+    return (
+        <div>
+            <h2>Orders</h2>
+            <ul>
+                {filteredOrders.length > 0 ? (
+                    filteredOrders.map(order => (
+                        <li key={order.order_id}>
+                            Order id: {order.order_id}, amount: {order.amt}
+                        </li>
                     ))
-                ) : (
-                    <tr>
-                        <td>No orders found</td>
-                    </tr>
+                ):(
+                    <li>No matching</li>
                 )}
-            </tbody>
-        </table>
-    </div>
+            </ul>
+        </div>
+    )
 
-  )
 }
 
-export default OrderHistory
+export default OrderHistory;
+
+
+
+
+
+
+
+
+
+

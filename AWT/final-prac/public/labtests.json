@@ -1,0 +1,6 @@
+[
+    { "patient_name": "John Doe", "test_type": "Blood Test", "result": "Positive" },
+    { "patient_name": "Jane Smith", "test_type": "X-ray", "result": "Normal" },
+    { "patient_name": "Alex Brown", "test_type": "CT Scan", "result": "Pending" }
+]
+  

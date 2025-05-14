@@ -1,101 +1,59 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 function CheckoutForm() {
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    pincode: '',
-    email: '',
-    phone: ''
+  const [form, setForm] = useState({
+    firstName: "",
+    lastName: "",
+    pincode: "",
+    email: "",
+    phone: ""
   });
 
   const [errors, setErrors] = useState({});
 
-  // Handle change in any input
   const handleChange = (e) => {
-    const { name, value } = e.target;
-
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
+    setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  // Validation logic
   const validate = () => {
-    let tempErrors = {};
-
-    // First & Last Name required
-    if (!formData.firstName.trim())  tempErrors.firstName = "First name is required";
-    if (!formData.lastName.trim()) tempErrors.lastName = "Last name is required";
-
-    // Pincode - exactly 6 digits
-    if (!/^\d{6}$/.test(formData.pincode)) tempErrors.pincode = "Pincode must be 6 digits";
-
-    // Email - simple regex + required
-    if (!formData.email.trim()) {
-      tempErrors.email = "Email is required";
-    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-      tempErrors.email = "Enter a valid email";
-    }
-
-    // Phone - starts with 9/8/7 + 10 digits
-    if (!/^[987]\d{9}$/.test(formData.phone)) {
-      tempErrors.phone = "Phone must start with 9/8/7 and be 10 digits";
-    }
-
-    setErrors(tempErrors);
-
-    return Object.keys(tempErrors).length === 0;
+    let errs = {};
+    if (!form.firstName) errs.firstName = "Required";
+    if (!form.lastName) errs.lastName = "Required";
+    if (!/^\d{6}$/.test(form.pincode)) errs.pincode = "Invalid pincode";
+    if (!/\S+@\S+\.\S+/.test(form.email)) errs.email = "Invalid email";
+    if (!/^[987]\d{9}$/.test(form.phone)) errs.phone = "Invalid phone";
+    return errs;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (validate()) {
-      alert("Form submitted successfully!");
-      console.log("Submitted Data: ", formData);
+    const errs = validate();
+    if (Object.keys(errs).length === 0) {
+      alert("Order Placed Successfully!");
     } else {
-      alert("Please fix the errors in the form.");
+      setErrors(errs);
     }
   };
 
   return (
-    <div style={{ padding: "20px" }}>
-      <h2>Checkout Form</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>First Name: </label><br />
-          <input type="text" name="firstName" value={formData.firstName} onChange={handleChange} />
-          {errors.firstName && <p style={{ color: "red" }}>{errors.firstName}</p>}
-        </div>
+    <form onSubmit={handleSubmit}>
+      <input name="firstName" placeholder="First Name" onChange={handleChange} />
+      {errors.firstName && <span>{errors.firstName}</span>}<br/>
 
-        <div>
-          <label>Last Name: </label><br />
-          <input type="text" name="lastName" value={formData.lastName} onChange={handleChange} />
-          {errors.lastName && <p style={{ color: "red" }}>{errors.lastName}</p>}
-        </div>
+      <input name="lastName" placeholder="Last Name" onChange={handleChange} />
+      {errors.lastName && <span>{errors.lastName}</span>}<br/>
 
-        <div>
-          <label>Pincode: </label><br />
-          <input type="text" name="pincode" value={formData.pincode} onChange={handleChange} />
-          {errors.pincode && <p style={{ color: "red" }}>{errors.pincode}</p>}
-        </div>
+      <input name="pincode" placeholder="Pincode" onChange={handleChange} />
+      {errors.pincode && <span>{errors.pincode}</span>}<br/>
 
-        <div>
-          <label>Email: </label><br />
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
-          {errors.email && <p style={{ color: "red" }}>{errors.email}</p>}
-        </div>
+      <input name="email" placeholder="Email" onChange={handleChange} />
+      {errors.email && <span>{errors.email}</span>}<br/>
 
-        <div>
-          <label>Phone: </label><br />
-          <input type="text" name="phone" value={formData.phone} onChange={handleChange} />
-          {errors.phone && <p style={{ color: "red" }}>{errors.phone}</p>}
-        </div>
+      <input name="phone" placeholder="Phone" onChange={handleChange} />
+      {errors.phone && <span>{errors.phone}</span>}<br/>
 
-        <button type="submit">Submit</button>
-      </form>
-    </div>
+      <button type="submit">Submit</button>
+    </form>
   );
 }
 
